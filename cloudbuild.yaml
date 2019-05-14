@@ -4,4 +4,4 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ["push", "gcr.io/$PROJECT_ID/myfirstimage"]
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['beta', 'run', 'deploy', 'gcdc-nd', '--image', 'gcr.io/$PROJECT_ID/myfirstimage', '--region', 'us-central1', '--allow-unauthenticated']
+  args: ['beta', 'run', 'deploy', 'gcdc-nd', '--image', 'gcr.io/$PROJECT_ID/myfirstimage', '--region', 'us-central1']
